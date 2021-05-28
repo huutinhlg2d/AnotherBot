@@ -10,6 +10,8 @@ import javax.security.auth.login.LoginException;
 
 public class Main {
     public static void main(String[] args) throws LoginException, InterruptedException {
+        System.err.print(Secret.TutorialBotToken);
+        System.out.print(Secret.TutorialBotToken);
         JDA TutorialBot = JDABuilder.createDefault(Secret.TutorialBotToken,
             GatewayIntent.GUILD_MESSAGES,
             GatewayIntent.DIRECT_MESSAGES,
